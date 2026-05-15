@@ -1,0 +1,44 @@
+# 🕵️‍♀️ Framework de Evaluación de Agentes y Modelos de Lenguaje (LLM)
+
+Este documento establece el estándar metodológico para la validación de outputs generados por IA. El enfoque se desplaza de la percepción subjetiva hacia una **auditoría técnica basada en evidencia**, asegurando que el comportamiento del modelo se alinee con las reglas de negocio y la veracidad de los datos. 🚀
+
+## 1. 🎯 Protocolo de Auditoría de Cumplimiento (Task Completion)
+El objetivo es verificar si el modelo ejecutó la totalidad de la demanda técnica, no solo la intención general. ✨
+
+### Metodología de análisis:
+* **Desglose de Requerimientos:** Identificar la meta principal y las restricciones secundarias como formato, límites de datos o condiciones específicas. 📋
+* **Evaluación por Capas:**
+    * **Total (5/5):** Resolución íntegra del pedido con aporte de valor lógico. ✅
+    * **Mostly (4/5):** El modelo resuelve el núcleo de la tarea pero omite un detalle menor que no afecta el objetivo principal. 👍
+    * **Parcial (3/5):** Se resuelve una parte significativa pero falla en la meta principal o metas secundarias clave. 🧐
+    * **Falla Crítica (1-2/5):** El output es irrelevante, falla en el pedido central o no contiene información útil. ❌
+
+---
+## 2. 📚 Validación de Integridad de Datos (Factual Accuracy)
+Proceso de detección de alucinaciones y sesgos mediante la atomización de afirmaciones. 🔍
+
+* **Segmentación de Claims:** Dividir la respuesta en unidades de información mínimas y numeradas. 🔢
+* **Filtro de Subjetividad:** Se descartan declaraciones de opinión o sentimiento personal para auditar únicamente hechos comprobables. 🚫🗣️
+* **Criterio de Veracidad:** Toda afirmación debe ser contrastada con fuentes de alta autoridad y expertos en la materia. 🏛️
+
+---
+
+## 3. ⚙️ Auditoría de Performance Operativa (AI Performance)
+Evaluación del proceso lógico, la destreza y la eficiencia del agente durante la ejecución de tareas. ⚡
+
+### Indicadores Clave de Desempeño (KPIs):
+* **🗺️ Navegación:** ¿El camino hacia el dato fue lógico y directo o hubo desvíos irrelevantes?
+* **🖱️ Interacción:** Capacidad de respuesta ante elementos de la interfaz como botones y links.
+* **⏱️ Optimización de Pasos:** Identificación de bucles innecesarios o acciones redundantes.
+* **🧹 Higienización del Output:** El resultado final debe estar limpio de basura de código o errores de formato.
+
+> ⚠️ **Bloqueo Operativo:** Cualquier interrupción por medidas de seguridad o CAPTCHA se clasifica automáticamente como desempeño inaceptable (1/5). 🛑
+
+---
+
+## 🏆 Matriz de Decisión (Veredicto)
+Para la selección del "Mejor Resultado" en comparaciones lado a lado (Side-by-Side), aplicamos las **Reglas de Oro**:
+
+| Prioridad | Criterio | Justificación |
+| :--- | :--- | :--- |
+| **Alta** 👑 | **Exactitud y Cumplimiento** | La utilidad de un modelo depende de la veracidad. Un error factual invalida la eleg
