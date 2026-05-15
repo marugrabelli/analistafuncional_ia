@@ -1,0 +1,41 @@
+# ⚙️ Auditoría de Performance y Navegación de Agentes
+
+Este módulo se enfoca en la evaluación del **comportamiento operativo** de la IA. No auditamos *qué* dijo el modelo, sino *cómo* llegó a la solución. Es la diferencia entre un proceso rudimentario y uno de nivel industrial. ⚡
+
+## 🗺️ 1. Eficiencia en la Navegación
+Un agente de IA debe demostrar una ruta lógica hacia la información.
+
+* **Ruta Óptima:** El agente identifica la fuente primaria y accede directamente.
+* **Redundancia:** Se penalizan los agentes que entran y salen de la misma página sin extraer datos o que realizan búsquedas circulares. 🔄
+* **Manejo de Errores:** Evaluamos cómo reacciona el agente ante un "Error 404" o una página caída. ¿Busca una alternativa o se queda en un bucle?
+
+## 🖱️ 2. Precisión de Interacción (UI Interaction)
+Evaluamos la destreza técnica del agente al interactuar con interfaces web:
+
+* **Inputs y Filtros:** ¿Sabe aplicar filtros de fecha, precio o categoría correctamente? 🔍
+* **Acciones de Clic:** ¿Hace clic en el botón correcto o se distrae con banners publicitarios?
+* **Manejo de Pop-ups:** Capacidad para cerrar o ignorar elementos emergentes que bloquean la tarea.
+
+## 🧹 3. Calidad y Limpieza del Output
+El resultado final debe ser "listo para producción". 
+
+* **Higienización de Datos:** El texto no debe contener restos de código HTML, etiquetas de scraping (ej. `<div>`, `<span>`) o mensajes de error del sistema.
+* **Formateo Estructural:** Uso correcto de tablas, listas y jerarquías que faciliten la lectura humana. 📋
+
+---
+
+## 🚦 Semáforo de Performance
+
+| Estado | Descripción | Calificación |
+| :--- | :--- | :--- |
+| **🟢 Fluido** | Navegación directa, sin errores de interacción y formato perfecto. | 5/5 |
+| **🟡 Ruidoso** | Llegó al objetivo pero con pasos redundantes o formato descuidado. | 3/5 |
+| **🔴 Bloqueado** | Se detuvo ante un CAPTCHA, entró en un bucle infinito o extrajo basura técnica. | 1/5 |
+
+> ⚠️ **Regla de Oro:** Si un agente se encuentra con un **CAPTCHA** o una barrera de seguridad y no puede saltarla, la tarea se considera fallida a nivel operativo, independientemente de su capacidad lógica. 🛑
+
+---
+
+## 📝 Ejemplo de Justificación de Performance
+*"Aunque la Respuesta B fue precisa, la **Respuesta A** es superior debido a su eficiencia operativa. El agente A utilizó filtros avanzados de búsqueda para reducir los resultados de 1000 a 10, mientras que el agente B navegó manualmente por las primeras 3 páginas de resultados, aumentando la latencia y el riesgo de error de extracción."*
+
