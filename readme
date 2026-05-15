@@ -1,0 +1,45 @@
+# 🚀 AI Functional Analyst Framework
+
+Este repositorio contiene un framework metodológico integral para la **evaluación, auditoría y optimización de modelos de lenguaje (LLM)** y agentes inteligentes. 🤖✨
+
+Como Analista Funcional de IA, el objetivo de este espacio es transformar la validación subjetiva en un proceso técnico, estructurado y basado en evidencia. Aquí encontrarás las guías necesarias para asegurar que la inteligencia artificial sea **veraz, eficiente y útil** para el usuario final.
+
+---
+
+## 📂 Estructura del Framework
+
+El material está organizado en cuatro pilares fundamentales que cubren el ciclo de vida del análisis funcional:
+
+### 🎯 [01. Metodología de Evaluación](metodologia_evaluacion_ia.md)
+Establece el estándar para medir el éxito de una tarea.
+* Protocolo de **Task Completion**.
+* Matriz de puntuación (1-5).
+* Desglose de requerimientos y restricciones técnicas.
+
+### 🔍 [02. Guía de Verificación de Datos](guia_verificacion_datos.md)
+Enfoque en la eliminación de alucinaciones.
+* Técnica de **Atomización de Claims**.
+* Niveles de veracidad y contraste de fuentes.
+* Detección de sesgos de confirmación.
+
+### ⚙️ [03. Auditoría de Performance de Agentes](auditoria_performance_agentes.md)
+Evaluación de la eficiencia operativa en tiempo real.
+* Análisis de rutas de navegación.
+* Precisión en la interacción con interfaces (UI).
+* Identificación de bloqueos técnicos y latencia.
+
+### 📝 [04. Reporte Final y Casos de Estudio](reporte_final_ia.md)
+Cómo comunicar hallazgos de forma profesional.
+* Templates de reportes **Side-by-Side (SxS)**.
+* Redacción de veredictos técnicos (Rationale).
+* Casos de estudio reales y resolución de conflictos.
+
+---
+
+## 🛠️ Cómo utilizar este repositorio
+
+1.  **Explora los módulos en orden:** Si sos nuevo en el análisis de IA, te recomendamos seguir la numeración (01 al 04).
+2.  **Aplica los templates:** Utiliza las tablas y matrices de decisión en tus propios proyectos de QA o análisis funcional.
+3.  **Mantén el criterio humano:** Recuerda que este framework prohíbe el uso de IA para evaluar IA; la calidad final depende de tu capacidad crítica. 🧠
+
+🚀✨
