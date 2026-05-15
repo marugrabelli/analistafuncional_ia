@@ -1,0 +1,35 @@
+# 🔍 Guía de Verificación de Veracidad y Detección de Alucinaciones
+
+Este módulo describe el proceso crítico para auditar la precisión de los datos generados por modelos de lenguaje. En el análisis funcional de IA, la **veracidad** es la prioridad número uno: una respuesta elegante pero falsa es un fallo crítico. ❌
+
+## 🛠️ El Proceso de "Atomización" de Datos
+
+Para verificar una respuesta, no la leemos como un todo; la desglosamos en partes mínimas de información (**Claims**).
+
+1. **Identificación de Afirmaciones:** Separar el texto en oraciones que declaren hechos (fechas, nombres, estadísticas, procesos técnicos).
+2. **Eliminación de "Ruido":** Ignorar adjetivos subjetivos o frases de cortesía (ej: "Este increíble destino...", "Me alegra ayudarte...").
+3. **Mapeo de Evidencia:** Cada afirmación debe ser contrastada individualmente con una fuente externa fiable. 📚
+
+## ⚖️ Niveles de Veracidad
+
+Al auditar cada dato, clasificamos según este criterio:
+
+* **✅ Confirmado:** El dato coincide exactamente con fuentes oficiales.
+* **⚠️ No Verificable:** No hay evidencia suficiente en la web para confirmar o negar el dato (se reporta como riesgo).
+* **🚫 Alucinación:** El modelo inventó el dato, confundió conceptos o citó fuentes inexistentes.
+
+## 📝 Plantilla para Reporte de Veracidad
+
+Cuando documentes un error de datos en un modelo, usá esta estructura profesional:
+
+| Afirmación Original | Estado | Fuente de Verificación | Observaciones Técnicas |
+| :--- | :--- | :--- | :--- |
+| "El límite de X es 500" | 🚫 Alucinación | [Link a doc oficial] | El modelo confundió la versión 2.0 con la 3.0. |
+| "Soporta archivos .json" | ✅ Confirmado | [Link a doc técnica] | Coincide con las especificaciones del sistema. |
+
+## 💡 Tips para evitar el "Sesgo de Confirmación"
+
+* **No uses la misma IA para verificar:** Nunca le preguntes al modelo "esto es verdad?". Buscá la respuesta en fuentes primarias fuera del chat. 🌐
+* **Cuidado con los "Near-Misses":** A veces el modelo acierta el concepto pero falla en el número o la fecha. Sigue siendo un fallo de precisión.
+* **Cruce de Fuentes:** Si un dato parece dudoso, validalo en al menos dos fuentes independientes. 🕵️‍♂️
+
