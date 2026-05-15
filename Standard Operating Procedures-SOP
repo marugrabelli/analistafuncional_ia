@@ -1,6 +1,8 @@
 # 🕵️‍♀️ Framework de Evaluación de Agentes y Modelos de Lenguaje (LLM)
 
-Este documento establece el estándar metodológico para la validación de outputs generados por IA. El enfoque se desplaza de la percepción subjetiva hacia una **auditoría técnica basada en evidencia**, asegurando que el comportamiento del modelo se alinee con las reglas de negocio y la veracidad de los datos. 🚀
+Este documento establece el estándar metodológico para la validación de outputs generados por IA. 
+El enfoque se desplaza de la percepción subjetiva hacia una **auditoría técnica basada en evidencia**, 
+asegurando que el comportamiento del modelo se alinee con las reglas de negocio y la veracidad de los datos. 🚀
 
 ## 1. 🎯 Protocolo de Auditoría de Cumplimiento (Task Completion)
 El objetivo es verificar si el modelo ejecutó la totalidad de la demanda técnica, no solo la intención general. ✨
