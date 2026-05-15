@@ -1,0 +1,56 @@
+# 📝 Template de Reporte Final y Casos de Estudio
+
+Este es el último módulo del framework. Aquí unificamos la teoría, la verificación de datos y la performance en un **entregable profesional**. Un buen Analista Funcional de IA no solo encuentra errores, sino que los documenta de forma que los desarrolladores puedan corregirlos. 🚀
+
+## 📋 Estructura del Reporte Side-by-Side (SxS)
+
+Cuando comparamos dos respuestas (A vs B), usamos este formato estándar para eliminar la subjetividad:
+
+### 📊 Tabla de Puntuación
+| Criterio | Respuesta A | Respuesta B |
+| :--- | :---: | :---: |
+| **Cumplimiento (Task Completion)** | 5/5 | 3/5 |
+| **Veracidad (Factual Accuracy)** | 5/5 | 1/5 |
+| **Desempeño (AI Performance)** | 4/5 | 4/5 |
+| **Puntaje Final** | **Excelente** | **Deficiente** |
+
+---
+
+## ⚖️ Veredicto Final (Rationale)
+
+El veredicto es la parte más importante. Debe ser una síntesis técnica basada en las **Reglas de Oro**. ✨
+
+#Ejemplo
+> *"Se seleccionó la **Respuesta A** como superior debido a que cumplió con la totalidad de los sub-requerimientos técnicos, incluyendo el filtrado por fecha que la Respuesta B ignoró. Además, la Respuesta B presentó una **alucinación crítica** en el dato de facturación anual, invalidando su utilidad operativa a pesar de tener una navegación fluida."*
+
+---
+
+## 🛠️ Reporte de Bloqueos Técnicos (Roadblocks)
+
+Es vital informar cualquier problema que interfiera con la evaluación. Esto ayuda a mejorar la infraestructura del agente.
+
+* **Tipo de Bloqueo:** (Ej: CAPTCHA, Error 404 persistente, Latencia alta).
+* **Impacto:** (Ej: "Impidió la verificación de los últimos 2 ítems de la lista").
+* **Evidencia:** Captura de pantalla o log del error. 📸
+
+---
+
+## 🌟 Caso de Estudio: El Error del "Presupuesto Invisible"
+
+**Escenario:** El usuario pide una lista de 5 hoteles en Madrid por menos de 150€.
+* **Respuesta A:** Entrega 5 hoteles, pero 2 de ellos cuestan 200€. (Falla en restricción técnica).
+* **Respuesta B:** Entrega solo 3 hoteles, pero todos bajo el presupuesto. (Cumplimiento parcial de cantidad, pero exactitud en regla de negocio).
+
+**Veredicto del Analista:** La **Respuesta B** es mejor. 🏆 Es preferible calidad y veracidad sobre cantidad con errores.
+
+---
+
+### 🏁 Conclusión del Framework
+Con estos 4 módulos, el repositorio cubre el ciclo completo de un **Analista Funcional de IA**:
+1. **Estrategia** 🎯
+2. **Datos** 📚
+3. **Proceso** ⚙️
+4. **Reporte** 📝
+
+---
+*Este material fue desarrollado para estandarizar la calidad de los agentes de IA y asegurar resultados seguros, veraces y eficientes.* 🧠✨
